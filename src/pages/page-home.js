@@ -18,7 +18,7 @@ export class PageHome extends PageElement {
               make bigger impact.
             </h2>
             <div class="bottom-data">
-              <a href="${urlForName('home')}">
+              <a href="${urlForName('chat')}">
                 <fc-button size="large">I'M READY! SHOW ME</fc-button>
               </a>
               <p>all free, no emails, no BS. We're Engineers...</p>

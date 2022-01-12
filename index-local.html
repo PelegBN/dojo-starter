@@ -61,6 +61,7 @@
 
     <link rel="stylesheet" href="index.css" onload="this.media='all'" />
   </head>
+
   <body>
     <app-index></app-index>
     <noscript>Please enable JavaScript to view this websiter!</noscript>
@@ -77,16 +78,16 @@
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
       /**
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) {
-            return s.replace(/~and~/g, '&')
-          }).join('#');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location)) */
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) {
+          return s.replace(/~and~/g, '&')
+        }).join('#');
+        window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location)) */
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
     <script type="module" src="src/app.js"></script>

@@ -26,4 +26,19 @@ export const routes = [
       await import('../pages/page-home');
       updateNavbar();
     }
-  }];
+  },
+  {
+    path: '/chat',
+    name: 'chat',
+    component: 'page-chat',
+    metadata: {
+      title: config.appName,
+      titleTemplate: null,
+      description: config.appDescription
+    },
+    action: async () => {
+      await import('../pages/page-chat');
+      updateNavbar();
+    }
+  }
+];
